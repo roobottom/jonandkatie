@@ -1,0 +1,23 @@
+{% set showpixelpeople = true %}
+{% extends "layouts/default.html" %}
+{% block body %}
+<body class="welcome index">
+  {% include "partials/header.html" %}
+	<div class="section main">
+		<div class="contents">
+			{% include "partials/navigation.html" %}
+			<div class="page">
+				<h1>Dear Family &amp; Friends</h1>
+				<div class="column double">
+					<h2>As you may know, Jon is into all this internet type stuff. So, after much convincing he finally persuaded Katie that having a wedding website was a good idea.</h2>
+					<p><span class="quote">&ldquo;</span><em>As long as you actually put some useful information on it</em><span class="quote">&rdquo;</span> she said. So we included details about the day and the people involved.</p>
+				</div>
+				<div class="column double last">
+					<p>The wedding is now over, and what an AMAZING day we had! Thank you, thank you, thank you to all of you who came or sent their best wishes. It was everything we could have ever hoped for.</p>
+					<p>We'll retain this website for a while, and publish some of the pictures in due course.</p>
+				</div>
+				<p class="signature">Love Jon &amp; Katie</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}

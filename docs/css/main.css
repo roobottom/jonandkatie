@@ -1,0 +1,972 @@
+/* Hello curious person, this is the CSS wot I wrote for our wedding site */
+/* Feel free to borrow from it, but If you're really keen on this new fangled CSS3 stuff */
+/* Then I'd suggest you check out Andy Clarke's DVDs or Dan Cederholm's books. */
+
+/* Import */
+@import url(reset.css);
+@import url(../fonts/sadey_ann.css);
+@import url(modernizer.css);
+
+/* Body
+------------------------------------------------------ */
+
+body {
+	text-align: center;
+	background-color: #132B3B;
+
+	background-image:
+		url(../img/backgrounds/header/highlight.png),
+		url(../img/backgrounds/header/cushion.png),
+		url(../img/backgrounds/common/noise-lighter.png);
+	background-position:
+		bottom center,
+		top left,
+		top left;
+	background-repeat:
+		no-repeat,
+		repeat,
+		repeat;
+	background-attachment:
+		fixed,
+		scroll,
+		scroll;
+}
+
+/* Headings
+------------------------------------------------------ */
+
+h1 {
+	font-family: 'SadeyAnnRegular', serif;
+	color: #333;
+	font-size: 4em;
+	width: 100%;
+	float: left;
+	background: url(../img/backgrounds/common/underline.png) bottom left repeat-x;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+h2 {
+	margin-bottom : .5em;
+	font-size : 1.3em;
+	color: #333;
+}
+
+h2.new {
+	padding-left: 38px;
+	background: url(../img/common/new-badge.png) left center no-repeat;
+}
+
+.welcome.index h2 {
+	font-size:1.15em;
+}
+
+.rsvp.form h2 {
+	margin-bottom: 0;
+}
+
+h2 abbr,
+h2 .time {
+	color: #FFF;
+	background: rgba(0,0,0,.3);
+	font-size: 0.7em;
+	padding: 0.3em 0.6em;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+	text-shadow: 0px 1px 1px rgba(0,0,0,.3);
+	-webkit-box-shadow: inset 0 1px 0px rgba(0,0,0,.1);
+	-moz-box-shadow: inset 0 1px 0px rgba(0,0,0,.1);
+	box-shadow: inset 0 1px 0px rgba(0,0,0,.1);
+}
+
+h2 abbr:hover {
+	background: rgba(255,255,255,.5);
+	color: #333;
+}
+
+h2 img {
+	float: left;
+	margin-right: 1em;
+}
+
+
+/* Typography
+------------------------------------------------------ */
+
+p {
+	margin : 0 0 1.5em;
+	line-height: 1.5em;
+	color: #333;
+	font-size: 0.9375em;
+}
+
+p.miniHeading {
+	margin:0;
+	font-weight: bold;
+}
+
+p.quiet {
+	color: #666666;
+}
+
+p.quiet strong {
+	color: #333;
+}
+
+p.signature {
+	font-family: 'SadeyAnnRegular', serif;
+	float:right;
+	font-size: 3em;
+	margin-bottom: 0;
+}
+
+strike { color: #999; }
+
+ul {
+list-style-type : disc; }
+
+ol {
+list-style-type : decimal; }
+
+strong {
+font-weight : bold; }
+
+em, dfn {
+font-style : italic; }
+
+dfn {
+font-weight : bold; }
+
+sup, sub {
+line-height : 0; }
+
+abbr,
+acronym {
+	border-bottom-width : 0;
+	cursor: help;
+}
+
+address {
+margin : 0 0 1.5em; }
+
+hr {
+	background: url(../img/backgrounds/common/seperator.png) bottom center no-repeat;
+	border: none;
+	padding-bottom: 20px;
+	margin-bottom: 1.25em;
+}
+
+/* Fonts
+------------------------------------------------------ */
+
+body {
+	font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+	font-weight: normal;
+}
+
+.amp,
+.header .logo img[alt],
+.quote {
+	font-family:Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif;
+	font-style: italic;
+}
+
+.amp {
+	font-size: 1.15em;
+}
+
+.quote {
+	font-size: 1.25em;
+}
+
+
+/* Layout
+------------------------------------------------------ */
+.section {
+	clear: both;
+	width: 100%;
+}
+
+.contents {
+	width: 53.25em;
+	margin: 0 auto;
+	text-align: left;
+}
+
+/* Buttons
+------------------------------------------------------ */
+
+.button {
+	background: rgba(224, 220, 208, 0.8) url('../img/backgrounds/common/50_50_highlight.png') left 50% repeat-x;
+	float: left;
+	padding: 0.3125em 0.625em;
+
+	color: #666666;
+	text-shadow: 0px 1px 0px rgba(0,0,0,.25);
+	text-decoration: none;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 13px;
+	border-radius: 4px;
+
+	font-size: 0.8125em;
+
+	text-shadow:
+		0px -1px 1px rgba(0,0,0,.2),
+		0px 1px 0px rgba(255,255,255,.5);
+
+	-webkit-box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5);
+	-moz-box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5);
+	box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5);
+
+	-webkit-transition: color 0.5s linear;
+}
+
+.button:hover,
+.button:active,
+.footer a.button:hover {
+	text-decoration: none;
+	color: #333;
+}
+
+
+/* countdown
+------------------------------------------------------ */
+
+.countdown {
+	position: absolute;
+	width: 100%;
+	top:0; left: 0;
+	background: rgba(0,0,0,.5);
+}
+
+.countdown p {
+	margin:0;
+	color: white;
+	text-shadow: 0px 1px 0px rgba(0,0,0,.2);
+	padding:.2em 0;
+	font-variant: small-caps;
+}
+
+	.countdown p .countdownsection {
+		float: left;
+	}
+
+/* Header
+------------------------------------------------------ */
+
+.header {
+	background-color: #275877;
+	background-image:
+	 	url(../img/backgrounds/header/highlight.png),
+		url(../img/backgrounds/header/cushion.png),
+		url(../img/backgrounds/common/noise.png),
+		url(../img/backgrounds/header/gradient.png);
+	background-position:
+		bottom center,
+		top left,
+		top left,
+		top left;
+	background-repeat:
+		no-repeat,
+		repeat,
+		repeat,
+		repeat-x;
+	padding:2.25em 0 1em 0;
+}
+
+.header .date {
+	color: white;
+	text-shadow: 0px 1px 0px rgba(0,0,0,.5);
+	padding:.2em 0;
+	font-style: italic;
+}
+
+.header .logo {
+	text-decoration: none;
+}
+
+/* what happens when user disables images? this... */
+
+.header .logo ../img[alt] {
+	font-size: 3em;
+	color: white;
+	text-shadow: 0px 1px 0px rgba(0,0,0,.7);
+}
+
+.header .logo img[alt]:hover {
+	text-shadow: 0px 1px 0px rgba(0,0,0,1);
+}
+
+.header .pixelpeople {
+	padding-bottom: 2em;
+}
+
+
+/* Navigation
+------------------------------------------------------ */
+
+.navigation {
+	background: #FBAD05 url('../img/backgrounds/common/lowlight.png') bottom left repeat-x;
+	border: 1px solid #E9AF34;
+	float: left;
+	margin-top: -1.25em;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+	-webkit-box-shadow:0 1px 4px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.25);
+	box-shadow: 0 1px 4px rgba(0,0,0,.25);
+
+	margin-left: 4.375em;
+}
+
+.navigation li {
+	list-style: none;
+	float: left;
+}
+
+.navigation a {
+	display: block;
+	width: 8.75em;
+	text-align: center;
+	border-right: 1px solid #E9AF34;
+	border-left: 1px solid #FFDC94;
+	text-decoration: none;
+	padding: .5em 0;
+	color: #AB7F0B;
+
+	text-shadow:
+		0px -1px 1px rgba(0,0,0,.2),
+		0px 1px 0px rgba(255,255,255,.5);
+
+	-webkit-box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5);
+	-moz-box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5);
+	box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5);
+
+	-webkit-transition: color 0.1s linear;
+	position: relative;
+}
+
+.navigation .first a { border-left: none; }
+.navigation .last a { border-right: none; }
+
+.navigation a:hover,
+.navigation a:active,
+.welcome .navigation #navWelcome a,
+.the-day .navigation #navTheDay a,
+.people .navigation #navPeople a,
+.accommodation .navigation #navAccommodation a,
+.gifts .navigation #navGifts a,
+.rsvp .navigation #navRSVP a {
+	background: #FBAD05 url('../img/backgrounds/common/highlight.png') top left repeat-x;
+	color: white;
+	font-weight: bold;
+	text-shadow: 0px 1px 0px rgba(0,0,0,.25);
+}
+
+.navigation a img {
+	position: absolute;
+	top: -7px;
+	right: 0;
+}
+
+/* Main
+------------------------------------------------------ */
+
+.main {
+	background: #E9E5D8 url('../img/backgrounds/common/noise.png') top left repeat;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+
+	-webkit-box-shadow:
+		0 -4px 4px rgba(0,0,0,.15),
+		0 4px 4px rgba(0,0,0,.15);
+	-moz-box-shadow:
+		0 -4px 4px rgba(0,0,0,.15),
+		0 4px 4px rgba(0,0,0,.15);
+	box-shadow:
+		0 -4px 4px rgba(0,0,0,.15),
+		0 4px 4px rgba(0,0,0,.15);;
+
+	float: left;
+	padding-bottom: 1.25em;
+}
+
+/* columns
+------------------------------------------------------ */
+
+.column { /* default single column */
+	width:12.375em;
+	float: left;
+	margin-right: 1.25em;
+}
+
+.column.double { /* double column */
+	width: 26em;
+}
+
+.column.triple { /* triple column */
+	width: 39.625em;
+}
+
+.column.full { /* full width column */
+	width:100%;
+	margin-right: 0;
+}
+
+.column.last { margin-right: 0; }
+.column.first { clear: both;}
+
+/* Page
+------------------------------------------------------ */
+
+.page {
+	padding:2em 0 1.25em;
+}
+
+.page p a,
+.page li a,
+.page h2 a,
+.page h3 a {
+	color: #346886;
+	text-shadow: 0px 1px 0px rgba(255,255,255,.5);
+	-webkit-transition: color 0.5s linear;
+}
+
+.page h3 a { text-decoration: none; }
+
+.page p a:hover,
+.page li a:hover,
+.page h2 a:hover,
+.page h3 a:hover {
+	color: #2D2D2D;
+}
+
+.page .column.photo img {
+	background: rgba(255,255,255,.4);
+	-webkit-background-origin: content-box;
+	padding:0.625em;
+
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.5);
+	box-shadow: 0 1px 4px rgba(0,0,0,.5);
+
+	border: 1px solid white;
+}
+
+/* breakout box
+------------------------------------------------------ */
+
+.breakout {
+	width: 100%;
+	border: 1px solid #E9AF34;
+	background-color: #FBAD05;
+	background-image:
+		url('../img/backgrounds/common/highlight.png'),
+		url('../img/backgrounds/common/cushion.png'),
+		url('../img/backgrounds/header/highlight.png');
+	background-position:
+		top left,
+		top left,
+		bottom center;
+	background-repeat:
+		repeat-x,
+		repeat,
+		no-repeat;
+
+	-webkit-box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5),
+		0 1px 4px rgba(0,0,0,.25);
+	-moz-box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5),
+		0 1px 4px rgba(0,0,0,.25);
+	box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5),
+		0 1px 4px rgba(0,0,0,.25);
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+}
+
+.breakout p {
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	color: #745813;
+	margin:.2em 0 0 0;
+	line-height: normal;
+}
+
+.breakout h2 {
+	width: 100%;
+	text-align: center;
+	margin: .05em 0;
+	font-size: 4em;
+	color: #745813;
+	text-shadow: 0 1px 1px rgba(255,255,255,.9);
+}
+
+.breakout a {
+	border: 1px solid #E9AF34;
+	margin-top: 10px;
+	padding: 10px 0;
+	text-align: center;
+	width: 100%;
+	float: left;
+
+	background-color: #FBAD05;
+	background-image:
+		url('../img/backgrounds/common/highlight.png'),
+		url('../img/backgrounds/header/highlight.png');
+	background-position:
+		top left,
+		bottom center;
+	background-repeat:
+		repeat-x,
+		no-repeat;
+
+	-webkit-box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5),
+		0 1px 4px rgba(0,0,0,.25);
+	-moz-box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5),
+		0 1px 4px rgba(0,0,0,.25);
+	box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5),
+		0 1px 4px rgba(0,0,0,.25);
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	color: #745813;
+	text-shadow: 0 1px 1px rgba(255,255,255,.9);
+	text-decoration: none;
+	font-size: 1.5em;
+}
+
+.breakout a:hover {border: 1px solid #795700; }
+
+/* forms
+------------------------------------------------------ */
+.column.last {
+	position: relative;
+}
+
+/* as general as I can be form styles */
+
+.column.last form {
+	width:26em;
+	position: absolute;
+	top: -3.75em; left: 0;
+
+	border: 1px solid #E9AF34;
+	background-color: #FBAD05;
+	background-image:
+		url('../img/backgrounds/common/highlight.png'),
+		url('../img/backgrounds/common/cushion.png'),
+		url('../img/backgrounds/header/highlight.png');
+	background-position:
+		top left,
+		top left,
+		bottom center;
+	background-repeat:
+		repeat-x,
+		repeat,
+		no-repeat;
+
+	-webkit-box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5),
+		0 1px 4px rgba(0,0,0,.25);
+	-moz-box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5),
+		0 1px 4px rgba(0,0,0,.25);
+	box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5),
+		0 1px 4px rgba(0,0,0,.25);
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+form label {
+	float: left;
+	clear: left;
+	margin-bottom: 0.625em;
+	color: #333;
+	text-shadow: 0 1px 0 white;
+}
+
+.rsvp.index .column.last form h3 {
+	font-family: 'SadeyAnnRegular', serif;
+	font-size: 3em;
+	color: white;
+	text-shadow: 0 1px 0 rgba(0,0,0,.5);
+	margin-left: 40px;
+}
+
+.rsvp.index .column.last form #sunflower {
+	position: absolute;
+	left: -2.25em;
+	top: -.5em;
+}
+
+.rsvp.index .column.last form fieldset {
+	float: left;
+	text-align: center;
+	margin: 1.25em 0 1.25em 25%;
+}
+
+.rsvp.index .column.last form input,
+.rsvp.index .column.last form button {
+	border: 1px solid #795700;
+	float: left;
+	padding:2em;
+}
+
+.rsvp.index .column.last form input {
+	background: white url(../img/backgrounds/common/input.text.png) top left repeat-x;
+
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	width: 3.125em;
+}
+
+.rsvp.index .column.last form button {
+	color: white;
+	text-shadow: 1px 0px 0px rgba(0,0,0,.15);
+	border-left: 1px solid rgba(255,255,255,.25);
+	background: #FBAD05 url('../img/backgrounds/common/highlight.png') top left repeat-x;
+	width: 12em;
+
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.rsvp.index .column.last p.quiet {
+	margin-top: 7.6em;
+	font-style: italic;
+}
+
+.rsvp.form .section.main { height: 32em;}
+
+.rsvp.form form {
+	padding: 1.25em;
+}
+
+.rsvp.form input[type=text],
+.rsvp.form textarea {
+	float: left;
+	clear: left;
+	width: 100%;
+	font-size: 1em;
+	border: 1px solid #795700;
+	margin-bottom: 0.625em;
+}
+
+.rsvp.form label.choice.last {
+	margin-bottom: 1.25em;
+}
+
+.rsvp.form button {
+	float: right;
+	clear: left;
+	font-size: 1.2em;
+	border: 1px solid #795700;
+	padding:0.3125em 0;
+	width: 100%;
+	margin-top: 1em;
+
+	color: #333;
+	text-shadow: 0 1px 0px white;
+	background: #FBAD05 url('../img/backgrounds/common/highlight.png') top left repeat-x;
+
+	-webkit-box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5),
+		0 1px 4px rgba(0,0,0,.25);
+	-moz-box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5),
+		0 1px 4px rgba(0,0,0,.25);
+	box-shadow:
+		inset 0 -1px 0px rgba(255,255,255,.5),
+		inset 0 1px 0px rgba(255,255,255,.5),
+		0 1px 4px rgba(0,0,0,.25);
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.rsvp.form .column.last p.quiet {
+	margin-top: 26em;
+	font-style: italic;
+}
+
+/* map
+------------------------------------------------------ */
+
+
+.page .column .map {
+	background: rgba(255,255,255,.4);
+	-webkit-background-origin: content-box;
+	padding:0.625em;
+
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.5);
+	box-shadow: 0 1px 4px rgba(0,0,0,.5);
+
+	border: 1px solid white;
+	position: relative;
+
+	margin:0.625em 0;
+}
+
+.page .column .map .container {
+	width:100%;
+	height: 200px;
+	border: 1px solid white;
+
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.1);
+	box-shadow: 0 1px 4px rgba(0,0,0,.1);
+}
+
+/* meta / vcard
+------------------------------------------------------ */
+
+.meta li {
+	width:100%;
+	float: left;
+	list-style: none;
+	margin-bottom: 0.3125em;
+}
+
+.meta li a {
+	display: block;
+	color: #333;
+	text-decoration: none;
+	background-color: rgba(0,0,0,.1);
+	background-position: 12px center;
+	background-repeat: no-repeat;
+	padding: 0.3125em 0.625em 0.3125em 2em;
+
+	-webkit-border-radius: 19px;
+	-moz-border-radius: 19px;
+	border-radius: 19px;
+
+	-webkit-box-shadow: inset 0 1px 0px rgba(0,0,0,.1);
+	-moz-box-shadow: inset 0 1px 0px rgba(0,0,0,.1);
+	box-shadow: inset 0 1px 0px rgba(0,0,0,.1);
+}
+
+.meta li a:hover {
+	background-color: rgba(255,255,255,.7);
+}
+
+.meta li.directions a { background-image: url('../img/icons/location.png'); }
+.meta li.url a { background-image: url('../img/icons/globe.png'); }
+.meta li.url.tripAdvisor a { background-image: url('../img/icons/pencil.png'); }
+
+/* entry
+------------------------------------------------------ */
+
+.page .entry p {
+	padding:1.25em;
+	background: rgba(255,255,255,0.5);
+	border: 1px solid white;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.3);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.3);
+	box-shadow: 0 1px 4px rgba(0,0,0,.3);
+}
+
+/* photolink
+------------------------------------------------------ */
+
+.photolink {
+	position: relative;
+	text-decoration: none;
+}
+
+.photolink p {
+	position: absolute;
+	bottom:-0.625em; right:-0.625em;
+}
+
+.photolink a {
+	text-decoration: none;
+}
+
+/* haspopup & popup
+------------------------------------------------------ */
+
+.haspopup { position: relative; }
+
+.popup {
+	position: absolute;
+	z-index: 50;
+	display: none;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+.popup .content {
+	float: left;
+	padding: 0.625em;
+	background: rgba(255,255,255,.9);
+	border: 1px solid white;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+	font-size: 0.8em;
+}
+
+.popup img {
+	float: left;
+}
+
+/* per column width settings */
+
+.column .popup {
+	width:13em;
+}
+
+.column.double .popup {
+	width:26.625em;
+}
+
+
+/* tooltip
+------------------------------------------------------ */
+
+.tooltip { position: relative; }
+
+.tooltip .tip {
+	position: absolute;
+	top:0; left:0;
+}
+
+/* Footer
+------------------------------------------------------ */
+
+.footer {
+	border-top: 1px solid #DFDBCC;
+	float: left;
+	padding: 1.24em 0;
+}
+
+.footer h3 {
+	color: white;
+	text-shadow: 0px 1px 1px rgba(0,0,0,.2);
+	text-transform: uppercase;
+	margin-bottom: .5em;
+}
+
+.footer li,
+.footer p {
+	list-style: none;
+	font-size: 0.8125em;
+	margin-bottom: 0.25em;
+	color: white;
+	text-shadow: 0px 1px 1px rgba(0,0,0,.2);
+}
+
+.footer a {
+	color: white;
+	text-decoration: none;
+}
+
+.footer p a {
+	text-decoration: underline;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+}
+
+.footer p img {
+	float: left;
+	margin-right: 0.625em;
+}
+
+.footer a.button {
+	color: #666666;
+	margin-top: 0.625em;
+	display: block;
+}
+
+.footer .center {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	float: left;
+}
+
+/* Promotion
+------------------------------------------------------ */
+
+.promotion {
+	float: left;
+	padding:1.75em 0 1.25em 0;
+	background: url(../img/backgrounds/common/seperator-white.png) top center no-repeat;
+}
+
+.promotion .contents { text-align: center; }
+
+.promotion p {
+	color: white;
+	text-shadow: 0px 1px 1px rgba(0,0,0,.2);
+	font-size: 0.8125em;
+	margin-bottom: 0;
+}
+
+.promotion a {
+	color: white;
+}

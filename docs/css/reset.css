@@ -1,0 +1,65 @@
+/*
+This rest css is based on the work of many fine web developers, I should probably list them here...
+
+Note: 	The overflow-x: hidden; applied to the html & body is a quick and dirty 
+		fix for using box-shadow on 100% wide elements. You probably shouldn't do 
+		this. erm. ever.
+*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, header, footer, nav, section, article {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+html, body { overflow-x: hidden;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+
+/* Headings 
+----------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
+ 
+/* Text elements
+----------------------------------------------------------- */
+ 
+p {margin:0 0 1.5em;}
+a:focus, a:hover {color:#000;}
+a {color:#009;text-decoration:underline;}
+blockquote {margin:1.5em;font-style:italic;}
+strong {font-weight:bold;}
+em, dfn {font-style:italic;}
+dfn {font-weight:bold;}
+sup, sub {line-height:0;}
+abbr, acronym {border-bottom:1px dotted #666;}
+address {margin:0 0 1.5em;font-style:italic;}
+del {color:#666;}
+pre {margin:1.5em 0;white-space:pre;}
+pre, code, tt {font:1.1em 'andale mono', 'lucida console', monospace;line-height:1.5;}
+ 
+/* Lists 
+----------------------------------------------------------- */
+ 
+li ul, li ol {margin:0 0;}
+ul, ol {margin:0 0 0 0;}
+ul {list-style-type:disc;}
+ol {list-style-type:decimal;}
+dl {margin:0 0 1.5em 0;}
+dl dt {font-weight:bold;}
+dd {margin-left:1.5em;}
+
+/* Forms 
+----------------------------------------------------------- */
+
+form *,
+form input[type=text],
+form button {
+	padding: 0;
+	margin: 0;
+}
+
+button::-moz-focus-inner { 
+    border: 0;
+    padding: 0;
+}

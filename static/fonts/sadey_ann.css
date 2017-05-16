@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'SadeyAnnRegular';
+    src: url('sadey_ann-webfont.eot');
+    src: url('sadey_ann-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sadey_ann-webfont.woff') format('woff'),
+         url('sadey_ann-webfont.ttf') format('truetype'),
+         url('sadey_ann-webfont.svg#SadeyAnnRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

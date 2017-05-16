@@ -1,0 +1,29 @@
+{% extends "layouts/default.html" %}
+{% block body %}
+<body class="gifts index">
+	{% include "partials/header.html" %}
+	<div class="section main">
+		<div class="contents">
+			{% include "partials/navigation.html" %}
+			<div class="page">
+				<h1>Gifts</h1>
+				<div class="column full">
+					<h2><img src="/img/gifts/gifts.png" alt="pixel gifts" />The pleasure of your company on our wedding day is all that we really require, but if you are feeling generous <strong>we now have a gift list at <a href="https://www.johnlewisgiftlist.com/giftint/JSPs/GiftList/BuyGifts/GuestFindAList.jsp" title="View our giftlist online (opens in a new window or tab)" target="_blank">John Lewis</a></strong> of new home type stuff that would be very useful for us starting out on our new life together.</h2>
+					<hr/>
+				</div>
+				<div class="column double">
+					<p><strong>So how do I use this gift list thing?</strong> Well, first you'll need our giftlist number <strong>396790</strong>. Armed with this you can browse through our gifts and <a href="https://www.johnlewisgiftlist.com/giftint/JSPs/GiftList/BuyGifts/GuestFindAList.jsp" title="View our giftlist online (opens in a new window or tab)" target="_blank">buy online</a></p>
+					<p class="miniHeading">or&hellip;</p>
+					<p>You can also visit the gift department of your <a href="#" title="John Lewis - Find your nearest store (opens in a new window or tab)" target="_blank">nearest store</a> or call a nice human on <strong>0845 600 2202</strong>. They'll be able to tell you the lovely things we have on our list, and you can buy over the phone.</p>
+				</div>
+				<div class="column double last">
+					<div class="breakout">
+						<p>Our List Number</p>
+						<h2>396790</h2>
+						<a href="#" title="View our giftlist online (opens in a new window or tab)" target="_blank">Buy Online</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

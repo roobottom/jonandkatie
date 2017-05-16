@@ -1,0 +1,20 @@
+/* Style replacement for those browsers wot don't support cool new web2.36(RC1) styles
+------------------------------------------------------ */
+
+.no-multiplebgs body {
+	background: #132B3B url(../img/backgrounds/common/noise-lighter.png) top left repeat;
+}
+
+.no-multiplebgs .header {
+	background: #275877 url(../img/backgrounds/header/gradient.png) top left repeat-x;
+}
+
+.no-rgba h2 abbr,
+.no-rgba h2 .time,
+.countdown { 
+	background: url(../img/backgrounds/rgba/black-30.png) top left repeat;
+}
+
+.no-rgba .page .column.photo img {
+	background: url(../img/backgrounds/rgba/white-40.png) top left repeat;
+}

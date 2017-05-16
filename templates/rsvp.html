@@ -1,0 +1,29 @@
+{% extends "layouts/default.html" %}
+{% block body %}
+<body class="rsvp index">
+	{% include "partials/header.html" %}
+	<div class="section main">
+		<div class="contents">
+			{% include "partials/navigation.html" %}
+			<div class="page">
+				<h1>RSVP</h1>
+				<div class="column double first">
+					<h2><strong>The invites are out</strong> &mdash; So the time has come to respond. Fortunately, we've made it easy-peasy by creating this new-fangled web form thingy-ma-bob.</h2>
+					<p>Inside your invitation you'll find your unique Guest Number, simply enter it here and, as if my magic, we'll know who you are.</p>
+				</div>
+				<div class="column double last">
+					<form>
+						<img src="/img/common/sunflower.png" alt="a lovely pixel sunflower." id="sunflower"/>
+						<h3>enter your guest number...</h3>
+						<fieldset>
+							<input type="text" name="g" id="g" maxlength="4" size="4"/>
+							<button type="submit">Get my details</button>
+						</fieldset>
+					</form>
+
+					<p class="quiet">Need to change some information? No problem, simply enter your number, and we'll retrieve whatever info you entered last time.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
